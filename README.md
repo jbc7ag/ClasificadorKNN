@@ -6,8 +6,7 @@ Mediante el algoritmo KNN o K vecinos mas cercanos, clasificaqueremos si el elem
 
 **Dato un dato clasificaremos si es un Perro o un Gato**
 
-    clase Punto: X, Y , Distancia, Caracteristicas
-    clase Caracteristicas: Clase (Gato o Perro), color, edad
+    clase Punto: X, Y , Distancia,  Clase (Gato o Perro)
 	
   
 **Algoritmo**
