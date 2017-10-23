@@ -4,10 +4,9 @@ from django.urls import reverse
 from rest_framework import status
 from .models import Puntos
 from .serializers import *
-from .clasificador import crearPuntos,obtenerDistancia
+from .clasificador import ComonFunctions
+
 import json
-
-
 
 
 class PuntosTest(TestCase):
@@ -16,9 +15,15 @@ class PuntosTest(TestCase):
 
     def test_get_all_puntos(self):
         response =self.client.get(reverse("puntos_endpoint"))
-        puntos = crearPuntos()
+        puntos = ComonFunctions.crearPuntos()
         serializer = PuntoSerializer(puntos, many=True)
         self.assertEqual(response.status_code,200)
         self.assertEqual(serializer.data,response.data)
 
-   
+
+    def test_get_kElements(self):
+        response =self.client.get(reverse("puntos_endpoint"))
+        puntos = ComonFunctions.crearPuntos()
+        serializer = PuntoSerializer(puntos, many=True)
+        self.assertEqual(response.status_code,200)
+        self.assertEqual(serializer.data,response.data)
