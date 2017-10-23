@@ -17,6 +17,5 @@ class Puntos(models.Model):
     clase=models.CharField(choices=TIPOANIMAL,max_length=50)
 
     
-
   
  

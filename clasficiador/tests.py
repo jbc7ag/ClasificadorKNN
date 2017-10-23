@@ -4,8 +4,7 @@ from django.urls import reverse
 from rest_framework import status
 from .models import Puntos
 from .serializers import *
-from .views import crearPuntos
-
+from .clasificador import crearPuntos,obtenerDistancia
 import json
 
 
@@ -21,3 +20,5 @@ class PuntosTest(TestCase):
         serializer = PuntoSerializer(puntos, many=True)
         self.assertEqual(response.status_code,200)
         self.assertEqual(serializer.data,response.data)
+
+   
