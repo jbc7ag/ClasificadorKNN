@@ -27,3 +27,8 @@ class PuntosTest(TestCase):
         serializer = PuntoSerializer(puntos, many=True)
         self.assertEqual(response.status_code,200)
         self.assertEqual(serializer.data,response.data)
+
+    def test_get_knn(self):
+        response =self.client.get(reverse("punto_endpoint",kwargs={'x':30,'y':20,'k':3}))
+        self.assertEqual(response.status_code,200)
+        self.assertEqual(response.data, [('GATO',2)])

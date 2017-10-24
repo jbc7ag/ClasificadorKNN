@@ -17,12 +17,15 @@ class ComonFunctions:
 
 
     def crearPuntos():
-            animal1 = Puntos(x=2,y=1,distancia=4, clase="PERRO")
-            animal2 = Puntos(x=2,y=1,distancia=4, clase="GATO")
-            animal3 = Puntos(x=2,y=1,distancia=4, clase="PERRO")
-            animal4 = Puntos(x=2,y=1,distancia=4, clase="GATO")
-            animal5 = Puntos(x=2,y=1,distancia=4, clase="PERRO")
-            animales = [animal1, animal2, animal3, animal4, animal5]
+            animal1 = Puntos(x=2,y=1,distancia=0, clase="PERRO")
+            animal2 = Puntos(x=8,y=3,distancia=0, clase="PERRO")
+            animal3 = Puntos(x=1,y=10,distancia=0, clase="PERRO")
+            animal4 = Puntos(x=20,y=20,distancia=0, clase="PERRO")
+            animal5 = Puntos(x=2,y=5,distancia=0, clase="PERRO")
+            animal6 = Puntos(x=25, y=10, distancia=0, clase="GATO")
+            animal7 = Puntos(x=27, y=15, distancia=0, clase="GATO")
+            animal8 = Puntos(x=29, y=15, distancia=0, clase="GATO")
+            animales = [animal1, animal2, animal3, animal4, animal5, animal6, animal7, animal8]
             return animales
 
 
